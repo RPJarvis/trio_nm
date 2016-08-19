@@ -28,3 +28,6 @@ class OfficerListing(models.Model):
     optional_phone = models.CharField(max_length=14, blank=True)
     optional_fax = models.CharField(max_length=14, blank=True)
     email = models.EmailField()
+
+    def __unicode__(self):
+        return u'%s' % self.name
