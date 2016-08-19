@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% block header %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 title">
+            <h1 class="center banner">TRiO New Mexico</h1>
+            <h3>Sub Header</h3>
+            <nav class="navbar navbar-default" id="main_nav" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar">
+                      <ul class="nav navbar-nav ">
+                        <li><a href="/" >Home</a></li>
+                        <li><a href="/news">News</a></li>
+                          <li><a href="/about">About</a></li>
+                          <li><a href="/scholarships">Scholarships</a></li>
+                          <li><a href="/officers">Officers</a></li>
+                          <li><a href="/alumni">Alumni</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+{% endblock %}

@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
+    #'django.contrib.messages',
     'django.contrib.staticfiles',
     'trio_nm_main',
 ]
@@ -132,3 +132,7 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = PROJECT_PATH + '/static_files'
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')

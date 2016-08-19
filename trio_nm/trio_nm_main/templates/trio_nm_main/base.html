@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 {% load static from staticfiles %}
 <html >
 <head lang="en">
@@ -18,8 +17,6 @@
     {% include '_header.html' %}
     {% block main_block %}
     {% endblock %}
-    <footer class="align_center">
-        <span>© 2016 TRiO New Mexico</span>
-    </footer>
+    {% include '_footer.html' %}
 </body>
 </html>
