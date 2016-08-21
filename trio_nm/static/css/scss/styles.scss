@@ -4,13 +4,29 @@ $dark-yellow: #EFCA08;
 $light-yellow: #FCF6B1;
 $dark-purple: #2D1E2F;
 
-$background-color: $dark-purple;
+
 
 body {
-  background-color: $background-color;
+  background-color: #573D1C;
 }
 
 .content {
   background-color: $light-yellow;
 
+}
+
+#banner {
+  background-color: $sea-green;
+}
+
+#nav-container {
+  background-color: $light-yellow;
+}
+
+.main_nav {
+  background: $light-yellow;
+}
+
+.content-row {
+  background-color: gray;
 }
