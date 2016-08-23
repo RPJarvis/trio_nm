@@ -44,3 +44,19 @@ def scholarships(request):
     context_dict = {}
 
     return render_to_response('scholarships.html', context_dict, context)
+
+
+def events(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render_to_response('events.html', context_dict, context)
+
+
+def news(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render_to_response('news.html', context_dict, context)
