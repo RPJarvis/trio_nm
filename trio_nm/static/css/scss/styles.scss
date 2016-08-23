@@ -5,28 +5,49 @@ $light-yellow: #FCF6B1;
 $dark-purple: #2D1E2F;
 
 
-
 body {
-  background-color: #573D1C;
+  background: url(../img/sandias.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .content {
-  background-color: $light-yellow;
+  background-color: transparent;
 
 }
 
 #banner {
-  background-color: $sea-green;
+
+  opacity: 0.5;
 }
 
 #nav-container {
-  background-color: $light-yellow;
+  background: #f8f8f8;
+  height: 54px;
 }
 
-.main_nav {
-  background: $light-yellow;
-}
+
 
 .content-row {
+  background-color: transparent;
+}
+
+#header-wrapper {
+  #banner-wrapper {
+
+  }
+  #banner {
+    opacity: 1 !important;
+  }
+}
+
+.main {
   background-color: gray;
+  margin-top: 14px;
+}
+
+.navbar-default {
+  border: none !important;
 }

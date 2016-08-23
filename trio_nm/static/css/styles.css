@@ -1,19 +1,31 @@
 body {
-  background-color: white; }
+  background: url(../img/sandias.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .content {
-  background-color: #FCF6B1; }
+  background-color: transparent; }
 
 #banner {
-  background-color: #A9E5BB; }
+  opacity: 0.5; }
 
 #nav-container {
-  background-color: #FCF6B1; }
-
-.main_nav {
-  background: #FCF6B1; }
+  background: #f8f8f8;
+  height: 54px; }
 
 .content-row {
-  background-color: gray; }
+  background-color: transparent; }
+
+#header-wrapper #banner {
+  opacity: 1 !important; }
+
+.main {
+  background-color: gray;
+  margin-top: 14px; }
+
+.navbar-default {
+  border: none !important; }
 
 /*# sourceMappingURL=styles.css.map */
