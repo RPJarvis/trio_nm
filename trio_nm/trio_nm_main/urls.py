@@ -4,6 +4,7 @@ from django.contrib import admin
 
 urlpatterns = [
    # url(r'^admin/', include(admin.site.urls)),
+    url(r'^our_mission', views.our_mission, name='our_mission'),
     url(r'^programs', views.programs, name='programs'),
     url(r'^events', views.events, name='events'),
     url(r'^news', views.news, name='news'),

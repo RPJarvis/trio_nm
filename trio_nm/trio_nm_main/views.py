@@ -30,6 +30,14 @@ def alumni(request):
     return render_to_response('alumni.html', context_dict, context)
 
 
+def our_mission(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render_to_response('our_mission.html', context_dict, context)
+
+
 def programs(request):
     context = RequestContext(request)
 

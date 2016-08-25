@@ -5,9 +5,6 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
-.content {
-  background-color: transparent; }
-
 #banner {
   opacity: 0.5; }
 
@@ -21,24 +18,6 @@ body {
   -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5); }
 
-.content-row {
-  background-color: transparent; }
-
-#header-wrapper #banner {
-  opacity: 1 !important; }
-
-.main, #events-portlet {
-  background-color: #f8f8f8;
-  margin-top: 14px;
-  padding: 10px 10px 10px 10px;
-  position: inherit; }
-
-.content-container {
-  border-top: 1px solid #2B4162;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5); }
-
 .navbar-default {
   border: none !important; }
 
@@ -46,14 +25,58 @@ body {
   color: black;
   font-size: 16px; }
 #navbar ul li a:hover {
-  background-color: #D4E6B5;
-  color: f8f8f8; }
+  background-color: #2B4162;
+  color: #f8f8f8;
+  opacity: .7; }
+#navbar ul li a:active {
+  background-color: #AFC2D5;
+  color: #f8f8f8;
+  opacity: .7; }
+
+.dropdown-menu {
+  background-color: #D7B377; }
+  .dropdown-menu li {
+    background-color: #f8f8f8;
+    border-top: 1px solid #2B4162; }
+
+.content-row {
+  background-color: transparent; }
+
+#header-wrapper #banner {
+  opacity: 1 !important;
+  background-image: url("/static/img/trio_banner_transparent.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  height: 86px; }
+
+.main, .content-container, #events-portlet {
+  background-color: #f8f8f8;
+  margin-top: 14px;
+  padding: 0px 10px 10px 10px;
+  position: inherit; }
+
+.content-header {
+  color: #2B4162; }
+
+.content-container {
+  border-top: 2px solid #2B4162;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 0; }
+  .content-container p {
+    padding-left: 10px;
+    padding-right: 10px; }
 
 #footer-container {
   background-color: #D7B377;
-  position: absolute;
+  margin-top: 18px;
   bottom: 0;
   width: 100%;
   height: 78px; }
+
+h3 {
+  margin-top: 12px; }
 
 /*# sourceMappingURL=styles.css.map */
