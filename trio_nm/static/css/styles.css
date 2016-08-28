@@ -1,10 +1,13 @@
 html {
-  position: relative;
-  min-height: 100%; }
+  position: relative; }
+
+html, body {
+  margin: 0;
+  height: 100%; }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px; }
+  /* Margin bottom by footer height
+  margin-bottom: 60px;*/ }
 
 body {
   background: url(../img/sandias.jpg) no-repeat center center fixed;
@@ -50,9 +53,12 @@ body {
 .content-row {
   background-color: transparent; }
 
+.content {
+  margin-bottom: 40px; }
+
 #header-wrapper #banner {
   opacity: 1 !important;
-  background-image: url("/static/img/trio_banner_transparent.png");
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -82,11 +88,14 @@ h3 {
   margin-top: 12px; }
 
 .footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 90px;
   background-color: #D7B377; }
+
+.col-md-4 {
+  padding: 0; }
 
 /*# sourceMappingURL=styles.css.map */

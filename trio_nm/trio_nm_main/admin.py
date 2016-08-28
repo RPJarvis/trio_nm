@@ -11,6 +11,13 @@ class NewsItemAdmin(admin.ModelAdmin):
 admin.site.register(models.NewsItem, NewsItemAdmin)
 
 
+class CalendarEventAdmin(admin.ModelAdmin):
+    list_display = ['title', 'date', 'location', 'description']
+
+
+admin.site.register(models.CalendarEvent, CalendarEventAdmin)
+
+
 class OfficerListingAdmin(admin.ModelAdmin):
     list_display = ['trio_title', 'name', 'job_title', 'job_details', 'phone', 'optional_phone',
                     'optional_fax', 'email']

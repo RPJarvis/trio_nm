@@ -19,6 +19,19 @@ class NewsItem(models.Model):
         return reverse('newsitem.views.post', args=[self.slug])
 
 
+class CalendarEvent(models.Model):
+    title = models.CharField(max_length=60)
+    date = models.DateTimeField()
+    location = models.CharField(max_length=120)
+    description = models.TextField()
+
+    class Meta:
+        ordering = ['-date']
+
+    def __unicode__(self):
+        return u'%s' % self.title
+
+
 class OfficerListing(models.Model):
     trio_title = models.CharField(max_length=40)
     name = models.CharField(max_length=60)

@@ -1,13 +1,16 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from .models import NewsItem, OfficerListing
+from .models import NewsItem, CalendarEvent, OfficerListing
 
 
 # Create your views here.
 def index(request):
     context = RequestContext(request)
 
-    context_dict = {}
+    latest_news_item = NewsItem.objects.latest('publish_date')
+    calendar = CalendarEvent.objects.all()
+    print calendar
+    context_dict = {'latest_news_item': latest_news_item, 'calendar': calendar}
 
     return render_to_response('index.html', context_dict, context)
 
@@ -65,6 +68,7 @@ def events(request):
 def news(request):
     context = RequestContext(request)
 
-    context_dict = {}
+    context_dict = {'l'}
 
     return render_to_response('news.html', context_dict, context)
+

@@ -10,11 +10,15 @@ $cream: #f8f8f8;
 
 html {
   position: relative;
-  min-height: 100%;
+
+}
+html, body {
+    margin: 0;
+    height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  /* Margin bottom by footer height
+  margin-bottom: 60px;*/
 }
 
 body {
@@ -23,6 +27,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
 
@@ -80,13 +85,17 @@ body {
   background-color: transparent;
 }
 
+.content {
+  margin-bottom: 40px;
+}
+
 #header-wrapper {
   #banner-wrapper {
 
   }
   #banner {
     opacity: 1 !important;
-    background-image: url("/static/img/trio_banner_transparent.png");
+    background-image: url("");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
@@ -120,15 +129,19 @@ body {
 }
 
 
-
-
 h3 {
   margin-top: 12px;
-}.footer {
-  position: absolute;
+}
+
+.footer {
+  position: static;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 90px;
   background-color: $dark-yellow;
+}
+
+.col-md-4 {
+  padding: 0;
 }

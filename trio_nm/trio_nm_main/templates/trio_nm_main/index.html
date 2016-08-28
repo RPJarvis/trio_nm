@@ -7,20 +7,20 @@
             <div class="content-header">
                 <h3>News</h3>
             </div>
-            <p>
-                the medium is the message filters CPC put the paper to bed in the slot mthomps
-                gutter Encyclo Fuego dying hot news doctrine, Arab spring cancel my subscription
-                Andy Carvin got drudged kitchen table of the future Foursquare TweetDeck 5%
-                corruption meme. WaPo paidContent Encyclo Bill Keller do what you do best and link
-                to the rest hot news doctrine location-based Voice of San Diego, process vs. product
-                lede CPM Steve Jobs news.me MinnPost masthead curmudgeon, innovation hyperhyperlocal
-                digital circulation strategy curmudgeon Mozilla WaPo.
-            </p>
+                <h4>{{ latest_news_item.title }}</h4>
+                <h5>{{ latest_news_item.publish_date }}</h5>
+                <p>{{ latest_news_item.body }}</p>
+
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-3 content-container" id="events-portlet">
             <div class="content-header"><h3>Calendar</h3></div>
-            <p>Events</p>
+            {% for event in calendar %}
+                <h4>{{ event.title }}</h4>
+                <p>{{ event.date }}</p>
+                <p>{{ event.location }}</p>
+                <p>{{ event.description }}</p>
+            {% endfor %}
         </div>
         <div class="col-md-1"></div>
     </div>
