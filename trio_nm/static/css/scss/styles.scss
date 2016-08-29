@@ -6,20 +6,23 @@ $dark-blue: #2B4162;
 $cream: #f8f8f8;
 
 
-
-
-html {
-  position: relative;
-
-}
-html, body {
-    margin: 0;
-    height: 100%;
-}
+html,
 body {
-  /* Margin bottom by footer height
-  margin-bottom: 60px;*/
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
 }
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+
+    /* Negative indent footer by it's height */
+    margin: 0 auto -90px;
+}
+
+/* Set the fixed height of the footer here */
+
 
 body {
   background: url(../img/sandias.jpg) no-repeat center center fixed;
@@ -27,7 +30,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 
@@ -106,25 +108,29 @@ body {
 .main, .content-container, #events-portlet {
   background-color: #f8f8f8;
   margin-top: 14px;
-  padding: 0px 10px 10px 10px;
+  padding: 0 10px 10px 10px;
   position: inherit;
 }
 
 .content-header {
   color: $dark-blue;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .content-container {
   border-top: 2px solid $dark-blue;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.5);
-  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 7px 7px 5px 0 rgba(0,0,0,0.5);
+  -moz-box-shadow: 7px 7px 5px 0 rgba(0,0,0,0.5);
+  box-shadow: 7px 7px 5px 0 rgba(0,0,0,0.5);
   padding-top: 0;
   p {
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Work Sans', sans-serif;
-
   }
 }
 
@@ -133,13 +139,29 @@ h3 {
   margin-top: 12px;
 }
 
-.footer {
+#footer {
   position: static;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 90px;
   background-color: $dark-yellow;
+}
+
+#push,
+#footer {
+    height: 90px;
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .col-md-4 {

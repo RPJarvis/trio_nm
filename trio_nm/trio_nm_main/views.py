@@ -9,7 +9,7 @@ def index(request):
 
     latest_news_item = NewsItem.objects.latest('publish_date')
     calendar = CalendarEvent.objects.all()
-    print calendar
+
     context_dict = {'latest_news_item': latest_news_item, 'calendar': calendar}
 
     return render_to_response('index.html', context_dict, context)
