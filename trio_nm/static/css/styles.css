@@ -3,20 +3,19 @@ body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */ }
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -90px; }
-
-/* Set the fixed height of the footer here */
 body {
   background: url(../img/sandias.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -130px; }
 
 #banner {
   opacity: 0.5; }
@@ -27,9 +26,9 @@ body {
   background: #f8f8f8;
   height: 54px;
   color: black;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5); }
 
 .navbar-default {
   border: none !important; }
@@ -94,16 +93,16 @@ h3 {
   margin-top: 12px; }
 
 #footer {
+  border-top: 3px solid #AFC2D5;
   position: static;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 90px;
   background-color: #D7B377; }
 
 #push,
 #footer {
-  height: 90px; }
+  height: 130px; }
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
@@ -112,6 +111,9 @@ h3 {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px; } }
+#copyright {
+  text-align: center; }
+
 .col-md-4 {
   padding: 0; }
 
