@@ -28,10 +28,6 @@ body {
     margin: 0 auto -130px;
 }
 
-#banner {
-
-  opacity: 0.5;
-}
 
 #nav-container {
   border-top: 3px solid $dark-blue;
@@ -53,7 +49,7 @@ body {
     li {
       a {
         color: black;
-        font-size: 16px;
+        font-size: 17px;
       }
       a:hover {
         background-color: $dark-blue;
@@ -92,11 +88,7 @@ body {
   }
   #banner {
     opacity: 1 !important;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: cover;
-    height: 86px;
+    height: 106px;
   }
 }
 
@@ -149,21 +141,67 @@ h3 {
     height: 130px;
 }
 
+#footer {
+  #links-row {
+    height: 100px;
+    padding-top: 8px;
+  }
+}
+
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
     #footer {
-        margin-left: -20px;
+        /*margin-left: -20px;
         margin-right: -20px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 20px;*/
     }
 }
 
 #copyright {
   text-align: center;
+  background-color: $dark-blue;
+  color: white;
+  height: 30px;
+  padding-top: 6px;
 }
 
-.col-md-4 {
+.column-container {
   padding: 0;
+  margin: 0;
+}
+
+.col-sm-5 {
+  padding: 0;
+}
+
+.calendar {
+  border-left: 1px solid $dark-yellow;
+}
+
+.event-listing {
+  border-bottom: 1px solid $dark-blue;
+  padding-bottom: 8px;
+  font-size: 13px;
+
+}
+
+.news {
+  text-align: justify;
+}
+
+#fb-link {
+  height: 60px;
+  width: auto;
+}
+
+#banner-row {
+  background-color: $cream;
+}
+
+#banner {
+  background-image: url("../img/trio_banner.png");
+  background-size: auto;
+  background-repeat: no-repeat;
 }

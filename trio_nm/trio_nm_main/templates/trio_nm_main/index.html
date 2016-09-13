@@ -3,24 +3,28 @@
 <div class="container-fluid content">
     <div class="row content-row">
         <div class="col-md-1"></div>
-        <div class="col-md-6 main content-container">
-            <div class="content-header">
-                <h3>News</h3>
+        <div class="col-md-10 main content-container news">
+            <div class="col-md-8">
+                <div class="content-header">
+                    <h3>News</h3>
+                </div>
+                    <h4>{{ latest_news_item.title }}</h4>
+                    <h5>{{ latest_news_item.publish_date }}</h5>
+                    <p>{{ latest_news_item.body }}</p>
             </div>
-                <h4>{{ latest_news_item.title }}</h4>
-                <h5>{{ latest_news_item.publish_date }}</h5>
-                <p>{{ latest_news_item.body }}</p>
+            <div class="col-md-4 calendar">
 
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3 content-container" id="events-portlet">
-            <div class="content-header"><h3>Calendar</h3></div>
-            {% for event in calendar %}
-                <h4>{{ event.title }}</h4>
-                <p>{{ event.date }}</p>
-                <p>{{ event.location }}</p>
-                <p>{{ event.description }}</p>
-            {% endfor %}
+
+                <div class="content-header"><h3>Calendar</h3></div>
+                {% for event in calendar %}
+                    <div class="event-listing">
+                        <h5>{{ event.title }}</h5>
+                            {{ event.date }} <br>
+                            {{ event.location }} <br>
+                            <a href="{{ event.slug }}" >Read More</a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
         <div class="col-md-1"></div>
     </div>

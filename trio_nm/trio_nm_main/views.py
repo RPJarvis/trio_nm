@@ -1,6 +1,7 @@
-from django.shortcuts import render_to_response
+
 from django.template import RequestContext
 from .models import NewsItem, CalendarEvent, OfficerListing
+from django.shortcuts import render_to_response, get_object_or_404, render
 
 
 # Create your views here.
@@ -71,4 +72,10 @@ def news(request):
     context_dict = {'l'}
 
     return render_to_response('news.html', context_dict, context)
+
+def event_post(request, slug):
+    post = get_object_or_404(CalendarEvent, slug=slug)
+    context_dict = {'post': post}
+
+    return render(request, 'event_post.html', context_dict)
 

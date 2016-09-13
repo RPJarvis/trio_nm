@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^scholarships', views.scholarships, name='scholarships'),
     url(r'^alumni', views.alumni, name='alumni'),
     url(r'^officers', views.officers, name='officers'),
+    url(r'^(?P<slug>[\w\-]+)/$', views.event_post, name='event_post'),
     url(r'^$', views.index, name='index'), #this should be last
 
 ]

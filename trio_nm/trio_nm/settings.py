@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     #'django.contrib.messages',
     'django.contrib.staticfiles',
     'trio_nm_main',
+
 ]
 
 MIDDLEWARE = [

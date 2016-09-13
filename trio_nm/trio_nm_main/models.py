@@ -24,12 +24,16 @@ class CalendarEvent(models.Model):
     date = models.DateTimeField()
     location = models.CharField(max_length=120)
     description = models.TextField()
+    slug = models.SlugField(unique=True, max_length=140)
 
     class Meta:
         ordering = ['-date']
 
     def __unicode__(self):
         return u'%s' % self.title
+
+    def get_absolute_url(self):
+        return reverse('.views.post', args=[self.slug])
 
 
 class OfficerListing(models.Model):
@@ -44,3 +48,13 @@ class OfficerListing(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.name
+
+
+class ScholarshipListing(models.Model):
+    scholarship_name = models.CharField(max_length=120)
+    application_deadline = models.DateTimeField()
+    application_link = models.CharField(max_length=240)
+    contact = models.CharField(max_length=240)
+
+    def __unicode__(self):
+        return u'%s' % self.scholarship_name
