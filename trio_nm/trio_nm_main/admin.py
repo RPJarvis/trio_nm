@@ -24,3 +24,10 @@ class OfficerListingAdmin(admin.ModelAdmin):
 
 
 admin.site.register(models.OfficerListing, OfficerListingAdmin)
+
+
+class ScholarshipListingAdmin(admin.ModelAdmin):
+    list_display = ['scholarship_name', 'application_deadline', 'application_link', 'contact']
+
+
+admin.site.register(models.ScholarshipListing, ScholarshipListingAdmin)

@@ -8,6 +8,18 @@
                 Have some verbiage here telling a student what this list of schlarships is and how they
                 can apply for these.
             </p>
+            <div id="scholarship-listings">
+            {% if scholarships %}
+                {% for scholarship in scholarships %}
+                    <div class="scholarship-listing">
+                        <h5>{{ scholarship.scholarship_name }}</h5>
+                        <h6>Application Deadline</h6> {{ scholarship.application_deadline }} <br>
+                        <h6>Online Application </h6> {{ application_link }}<br>
+                        <h6>For more info, contact: </h6> {{ scholarship.contact }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            </div>
         </div>
         <div class="col-md-1"></div>
     </div>
