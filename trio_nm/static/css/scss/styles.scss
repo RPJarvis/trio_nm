@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  background: url(../img/sandias.jpg) no-repeat center center fixed;
+  background: url(../img/_MG_6133.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,7 +144,8 @@ h3 {
 #footer {
   #links-row {
     height: 100px;
-    padding-top: 8px;
+    padding-top: 12px;
+
   }
 }
 
@@ -197,11 +198,19 @@ h3 {
 }
 
 #banner-row {
-  background-color: $cream;
+  background-color: white;
 }
 
 #banner {
   background-image: url("../img/trio_banner.png");
   background-size: auto;
   background-repeat: no-repeat;
+}
+
+#footer-links {
+  color: $dark-blue;
+  ul {
+    list-style: none;
+
+  }
 }

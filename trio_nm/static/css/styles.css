@@ -4,7 +4,7 @@ body {
   /* The html and body elements cannot have any padding or margin. */ }
 
 body {
-  background: url(../img/sandias.jpg) no-repeat center center fixed;
+  background: url(../img/_MG_6133.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -99,7 +99,7 @@ h3 {
 
 #footer #links-row {
   height: 100px;
-  padding-top: 8px; }
+  padding-top: 12px; }
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
@@ -138,11 +138,16 @@ h3 {
   width: auto; }
 
 #banner-row {
-  background-color: #f8f8f8; }
+  background-color: white; }
 
 #banner {
   background-image: url("../img/trio_banner.png");
   background-size: auto;
   background-repeat: no-repeat; }
+
+#footer-links {
+  color: #2B4162; }
+  #footer-links ul {
+    list-style: none; }
 
 /*# sourceMappingURL=styles.css.map */
