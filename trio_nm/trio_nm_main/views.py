@@ -1,6 +1,6 @@
 
 from django.template import RequestContext
-from .models import NewsItem, CalendarEvent, OfficerListing
+from .models import NewsItem, CalendarEvent, OfficerListing, ScholarshipListing
 from django.shortcuts import render_to_response, get_object_or_404, render
 
 
@@ -53,7 +53,9 @@ def programs(request):
 def scholarships(request):
     context = RequestContext(request)
 
-    context_dict = {}
+    scholarships = ScholarshipListing.objects.all()
+
+    context_dict = {'scholarships': scholarships}
 
     return render_to_response('scholarships.html', context_dict, context)
 
@@ -69,9 +71,34 @@ def events(request):
 def news(request):
     context = RequestContext(request)
 
-    context_dict = {'l'}
+    context_dict = {}
 
     return render_to_response('news.html', context_dict, context)
+
+
+def fair_share(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render(request, 'fair_share.html', context_dict)
+
+
+def committee(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render(request, 'committee.html', context_dict)
+
+
+def achiever(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render(request, 'achiever.html', context_dict)
+
 
 def event_post(request, slug):
     post = get_object_or_404(CalendarEvent, slug=slug)

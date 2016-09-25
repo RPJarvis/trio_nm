@@ -48,6 +48,9 @@ body {
     background-color: #f8f8f8;
     border-top: 1px solid #2B4162; }
 
+@media (max-width: 768px) {
+  .nav li {
+    border-top: 1px solid #2B4162; } }
 .content-row {
   background-color: transparent; }
 
@@ -61,7 +64,7 @@ body {
 .main, .content-container, #events-portlet {
   background-color: #f8f8f8;
   margin-top: 14px;
-  padding: 0 10px 10px 10px;
+  padding: 0 18px 18px 18px;
   position: inherit; }
 
 .content-header {
@@ -145,9 +148,32 @@ h3 {
   background-size: auto;
   background-repeat: no-repeat; }
 
-#footer-links {
+#footer-links ul {
+  list-style: none;
   color: #2B4162; }
-  #footer-links ul {
-    list-style: none; }
+  #footer-links ul li a {
+    color: #2B4162; }
+
+.officer-listing {
+  padding-bottom: 14px; }
+
+hr {
+  color: #2B4162; }
+
+h4, h5 {
+  color: #D7B377; }
+
+#front {
+  text-align: justify; }
+
+@media (max-width: 992px) {
+  #footer-links {
+    display: none; } }
+@media (max-width: 768px) {
+  .nav {
+    border-bottom: 1px solid #2B4162;
+    -webkit-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5); } }
 
 /*# sourceMappingURL=styles.css.map */
