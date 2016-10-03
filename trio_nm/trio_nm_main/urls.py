@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^officers', views.officers, name='officers'),
     url(r'^achiever', views.achiever, name='achiever'),
     url(r'^committee', views.committee, name='committee'),
+    url(r'^bylaws', views.bylaws, name='bylaws'),
     url(r'^(?P<slug>[\w\-]+)/$', views.event_post, name='event_post'),
     url(r'^$', views.index, name='index'), #this should be last
 

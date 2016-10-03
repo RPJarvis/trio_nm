@@ -100,6 +100,14 @@ def achiever(request):
     return render(request, 'achiever.html', context_dict)
 
 
+def bylaws(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render(request, 'bylaws.html', context_dict)
+
+
 def event_post(request, slug):
     post = get_object_or_404(CalendarEvent, slug=slug)
     context_dict = {'post': post}
