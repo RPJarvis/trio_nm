@@ -1,10 +1,32 @@
-{% extends 'trio_nm_main/achiever.html' %}
+{% extends 'trio_nm_main/base.html' %}
 {% block content %}
 <div class="container-fluid content">
     <div class="row content-row">
         <div class="col-md-1"></div>
-        <div class="col-md-10">
-            achiever
+        <div class="col-md-10 content-container">
+        	<div class="content-header">
+                <h3>Achiever</h3>
+            </div>
+            <p>
+            	Ask Chris for description of what acheiver is and how person id nominated.
+            </p>
+            <p>
+            	<a href="#">Download the Achiever Nomination Form</a>
+            </p>
+            <div>
+            	{% for achiever in achievers %}
+                    <div class="achiever">
+                        <h5>{{ achiever.headline }}</h5>
+                            {{ achiever.posting_date }} <br>
+                            <p>
+                            	{% if achiever.optional_image %}
+									{{ achiever.optional_image }}
+								{% endif %}
+                            	{{ achiever.text_body }} <br>
+                            </p>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
         <div class="col-md-1"></div>
     </div>

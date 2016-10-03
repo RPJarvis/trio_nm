@@ -31,3 +31,11 @@ class ScholarshipListingAdmin(admin.ModelAdmin):
 
 
 admin.site.register(models.ScholarshipListing, ScholarshipListingAdmin)
+
+
+class AchieverProfileAdmin(admin.ModelAdmin):
+	list_display = ['headline', 'posting_date', 'text_body', 'optional_image']
+
+admin.site.register(models.AchieverProfile, AchieverProfileAdmin)
+
+

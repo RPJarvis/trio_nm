@@ -1,6 +1,6 @@
 
 from django.template import RequestContext
-from .models import NewsItem, CalendarEvent, OfficerListing, ScholarshipListing
+from .models import NewsItem, AchieverProfile, CalendarEvent, OfficerListing, ScholarshipListing
 from django.shortcuts import render_to_response, get_object_or_404, render
 
 
@@ -95,7 +95,9 @@ def committee(request):
 def achiever(request):
     context = RequestContext(request)
 
-    context_dict = {}
+    acheivers = AchieverProfile.objects.all()
+
+    context_dict = {'achievers': achievers}
 
     return render(request, 'achiever.html', context_dict)
 

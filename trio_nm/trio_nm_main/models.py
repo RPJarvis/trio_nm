@@ -58,3 +58,13 @@ class ScholarshipListing(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.scholarship_name
+
+
+class AchieverProfile(models.Model):
+    headline = models.CharField(max_length=140)
+    posting_date = models.DateTimeField()
+    text_body = models.TextField(max_length=2048)
+    optional_image = models.ImageField(verbose_name="Optional Image", blank=True)
+
+    def __unicode__(self):
+        return u'%s' % self.headline
