@@ -108,6 +108,13 @@ def bylaws(request):
     return render(request, 'bylaws.html', context_dict)
 
 
+def membership(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render(request, 'membership.html', context_dict)
+
 def event_post(request, slug):
     post = get_object_or_404(CalendarEvent, slug=slug)
     context_dict = {'post': post}
