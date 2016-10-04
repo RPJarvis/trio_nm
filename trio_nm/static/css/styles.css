@@ -21,8 +21,8 @@ body {
   border-top: 3px solid #2B4162;
   border-bottom: 1px solid #D7B377;
   background: #f8f8f8;
-  height: 54px;
   color: black;
+  height: auto;
   -webkit-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5); }
@@ -103,13 +103,6 @@ h3 {
   height: 100px;
   padding-top: 12px; }
 
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-  #footer {
-    /*margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;*/ } }
 #copyright {
   text-align: center;
   background-color: #2B4162;
@@ -179,6 +172,10 @@ b {
   font-weight: bolder;
   font-size: larger; }
 
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: relative;
+  /* this can also be static */ }
+
 #coe-link {
   margin-left: 12px; }
 
@@ -212,12 +209,6 @@ b {
 
   .banner-img {
     height: 100px;
-    width: auto; }
-
-  #banner {
-    /*background-image: url("../img/trio_logo_gold.jpg");
-    background-size: auto 100px;
-    background-repeat: no-repeat;*/
-    height: 106px; } }
+    width: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

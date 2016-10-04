@@ -34,8 +34,8 @@ body {
   border-top: 3px solid $dark-blue;
   border-bottom: 1px solid $dark-yellow;
   background: $cream;
-  height: 54px;
   color: black;
+  height: auto;
   -webkit-box-shadow: 7px 7px 5px 0 rgba(0,0,0,0.5);
   -moz-box-shadow: 7px 7px 5px 0 rgba(0,0,0,0.5);
   box-shadow: 7px 7px 5px 0 rgba(0,0,0,0.5);
@@ -160,17 +160,6 @@ h3 {
   }
 }
 
-
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-    #footer {
-        /*margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;*/
-    }
-}
-
 #copyright {
   text-align: center;
   background-color: $dark-blue;
@@ -276,6 +265,10 @@ b {
 
 }
 
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: relative; /* this can also be static */
+}
+
 #coe-link {
   margin-left: 12px;
 }
@@ -327,12 +320,6 @@ b {
 
   }
 
-  #banner {
-    /*background-image: url("../img/trio_logo_gold.jpg");
-    background-size: auto 100px;
-    background-repeat: no-repeat;*/
-    height: 106px;
-    
-  }
+
 }
 
