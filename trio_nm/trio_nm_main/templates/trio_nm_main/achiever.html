@@ -5,26 +5,32 @@
         <div class="col-md-1"></div>
         <div class="col-md-10 content-container">
         	<div class="content-header">
-                <h3>Achiever</h3>
+                <h3>Achievers</h3>
             </div>
-            <p>
-            	Ask Chris for description of what acheiver is and how person id nominated.
-            </p>
-            <p>
-            	<a href="#">Download the Achiever Nomination Form</a>
-            </p>
+            <div>
+	            <p>
+	            	Ask Chris for description of what acheiver is and how person id nominated.
+	            </p>
+	            <p>
+	            	<a href="#">Download the Achiever Nomination Form</a>
+	            </p>
+            </div>
+            <br>
             <div>
             	{% for achiever in achievers %}
-                    <div class="achiever">
+            	<div class="row">
+                    <div class="achiever col-md-12">
                         <h5>{{ achiever.headline }}</h5>
                             {{ achiever.posting_date }} <br>
                             <p>
                             	{% if achiever.optional_image %}
-									{{ achiever.optional_image }}
+									<img class="float-left achiever-image" src="{{ achiever.optional_image.url }}">
 								{% endif %}
                             	{{ achiever.text_body }} <br>
                             </p>
                     </div>
+                    <br>
+                </div>
                 {% endfor %}
             </div>
         </div>

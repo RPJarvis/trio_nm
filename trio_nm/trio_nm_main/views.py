@@ -60,6 +60,16 @@ def scholarships(request):
     return render_to_response('scholarships.html', context_dict, context)
 
 
+def achiever(request):
+    context = RequestContext(request)
+
+    achievers = AchieverProfile.objects.all()
+
+    context_dict = {'achievers': achievers}
+
+    return render(request, 'achiever.html', context_dict)
+
+
 def events(request):
     context = RequestContext(request)
 
@@ -90,16 +100,6 @@ def committee(request):
     context_dict = {}
 
     return render(request, 'committee.html', context_dict)
-
-
-def achiever(request):
-    context = RequestContext(request)
-
-    acheivers = AchieverProfile.objects.all()
-
-    context_dict = {'achievers': achievers}
-
-    return render(request, 'achiever.html', context_dict)
 
 
 def bylaws(request):

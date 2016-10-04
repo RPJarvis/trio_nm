@@ -13,11 +13,12 @@ body {
 }
 
 body {
-  background: url(../img/_MG_6133.jpg) no-repeat center center fixed;
+ background: url(../img/sandias.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
 /* Wrapper for page content to push down footer */
@@ -98,7 +99,6 @@ body {
   }
   #banner {
     opacity: 1 !important;
-    height: 106px;
   }
 }
 
@@ -209,14 +209,12 @@ h3 {
 }
 
 #banner-row {
-  background-color: white;
+  background-color: transparent;
+
+
 }
 
-#banner {
-  background-image: url("../img/trio_banner.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-}
+
 
 #footer-links {
 
@@ -285,3 +283,56 @@ b {
 .bylaw-header {
 
 }
+
+.float-left {
+  float: left;
+}
+
+.achiever-image {
+  padding: 8px 8px 8px 8px;
+  width: auto;
+  height: 160px;
+}
+
+.achiever {
+  margin-top: 8px;
+  border-top: 1px solid $dark-blue;
+}
+
+@media (max-width: 550px) {
+  .banner-img {
+    height: 80px;
+    width: auto;
+
+  }
+  #show-big {
+    display: none;
+  }
+
+  #banner {
+    /*background-image: url("../img/trio_logo_gold_small.jpg");
+    background-repeat: no-repeat;*/
+    height: 80px;
+  }
+
+}
+
+@media (min-width: 551px) {
+  #show-small {
+    display: none;
+  }
+  .banner-img {
+    height: 100px;
+    width: auto;
+
+  }
+
+  #banner {
+    /*background-image: url("../img/trio_logo_gold.jpg");
+    background-size: auto 100px;
+    background-repeat: no-repeat;*/
+    height: 106px;
+    
+  }
+}
+
