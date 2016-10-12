@@ -13,7 +13,8 @@ body {
 }
 
 body {
- background: url(../img/sandias.jpg) no-repeat center center fixed;
+ /*background: url(../img/Turq.jpg) no-repeat center center fixed;*/
+ background: url(../img/Turq.jpg) repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -229,7 +230,8 @@ hr {
 }
 
 h4, h5 {
-  color: $dark-yellow;
+  /*color: $dark-yellow;*/
+  color: #c97678;
 }
 
 #front {
