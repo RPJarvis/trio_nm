@@ -134,7 +134,7 @@ h3 {
   width: auto; }
 
 #banner-row {
-  background-color: transparent; }
+  background-color: white; }
 
 #footer-links ul {
   list-style: none;
@@ -212,5 +212,21 @@ b {
   .banner-img {
     height: 100px;
     width: auto; } }
+#main_nav {
+  margin-bottom: 0; }
+
+.donate-button {
+  background: #2b4162;
+  background: -webkit-linear-gradient(#2b4162, #677c8f);
+  background: linear-gradient(#2b4162, #677c8f);
+  border: 1px solid #569;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 0 #444;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 20px;
+  font: normal 700 24px/1 "Calibri", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000; }
 
 /*# sourceMappingURL=styles.css.map */
