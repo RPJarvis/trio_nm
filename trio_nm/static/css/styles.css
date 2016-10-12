@@ -31,17 +31,24 @@ body {
 .navbar-default {
   border: none !important; }
 
-#navbar ul li a {
-  color: black;
-  font-size: 17px; }
-#navbar ul li a:hover {
-  background-color: #2B4162;
-  color: #f8f8f8;
-  opacity: .7; }
-#navbar ul li a:active {
-  background-color: #AFC2D5;
-  color: #f8f8f8;
-  opacity: .7; }
+#navbar {
+  padding-left: 0;
+  padding-right: 0; }
+  #navbar ul li a {
+    color: black;
+    font-size: 17px; }
+  #navbar ul li a:hover {
+    background-color: #2B4162;
+    color: #f8f8f8;
+    opacity: .7; }
+  #navbar ul li a:active {
+    background-color: #AFC2D5;
+    color: #f8f8f8;
+    opacity: .7; }
+
+#nav-sub {
+  padding-right: 0;
+  padding-left: 0; }
 
 .dropdown-menu {
   background-color: #D7B377; }

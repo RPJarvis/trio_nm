@@ -47,6 +47,8 @@ body {
 }
 
 #navbar {
+  padding-left: 0;
+  padding-right: 0;
   ul {
     li {
       a {
@@ -65,6 +67,11 @@ body {
       }
     }
   }
+}
+
+#nav-sub {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .dropdown-menu {

@@ -22,6 +22,7 @@ class NewsItem(models.Model):
 class CalendarEvent(models.Model):
     title = models.CharField(max_length=60)
     date = models.DateTimeField()
+    end_date = models.DateTimeField()
     location = models.CharField(max_length=120)
     description = models.TextField()
     slug = models.SlugField(unique=True, max_length=140)
