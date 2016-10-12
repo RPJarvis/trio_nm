@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.urlresolvers import reverse
-
+from datetime import datetime
+from django.utils import timezone
 
 class NewsItem(models.Model):
     title = models.CharField(max_length=140)
@@ -22,10 +23,10 @@ class NewsItem(models.Model):
 class CalendarEvent(models.Model):
     title = models.CharField(max_length=60)
     date = models.DateTimeField()
-    end_date = models.DateTimeField()
+    optional_end_date = models.DateTimeField(blank=True, null=True)
     location = models.CharField(max_length=120)
     description = models.TextField()
-    slug = models.SlugField(unique=True, max_length=140)
+    optional_link = models.TextField()
 
     class Meta:
         ordering = ['-date']
@@ -63,8 +64,8 @@ class ScholarshipListing(models.Model):
 
 class AchieverProfile(models.Model):
     headline = models.CharField(max_length=140)
-    posting_date = models.DateTimeField()
-    text_body = models.TextField(max_length=2048)
+    optional_posting_date = models.DateTimeField(blank=True, null=True)
+    text_body = models.TextField(max_length=2648)
     optional_image = models.ImageField(verbose_name="Optional Image", blank=True)
 
     def __unicode__(self):

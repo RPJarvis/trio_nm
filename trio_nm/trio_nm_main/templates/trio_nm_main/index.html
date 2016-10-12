@@ -21,9 +21,11 @@
                 <div class="content-header">
                     <h3>News</h3>
                 </div>
+                {% if latest_news_item %}
                     <h4>{{ latest_news_item.title }}</h4>
                     <h5>{{ latest_news_item.publish_date }}</h5>
                     <p>{{ latest_news_item.body }}</p>
+                {% endif %}
             </div>
             <div class="col-md-4 calendar">
                 <div class="content-header"><h3>Calendar</h3></div>
@@ -32,7 +34,9 @@
                         <h5>{{ event.title }}</h5>
                             {{ event.date }} <br>
                             {{ event.location }} <br>
-                            <a href="{{ event.slug }}" >Read More</a>
+                            {% if event.optional_link %}
+                                <a href="{{ event.optional_link }}" >Read More</a>
+                            {% endif %}
                     </div>
                 {% endfor %}
             </div>

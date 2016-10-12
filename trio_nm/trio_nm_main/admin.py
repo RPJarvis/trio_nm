@@ -12,7 +12,7 @@ admin.site.register(models.NewsItem, NewsItemAdmin)
 
 
 class CalendarEventAdmin(admin.ModelAdmin):
-    list_display = ['title', 'date', 'location', 'description']
+    list_display = ['title', 'date', 'location', 'description', 'optional_link']
 
 
 admin.site.register(models.CalendarEvent, CalendarEventAdmin)
@@ -34,7 +34,7 @@ admin.site.register(models.ScholarshipListing, ScholarshipListingAdmin)
 
 
 class AchieverProfileAdmin(admin.ModelAdmin):
-	list_display = ['headline', 'posting_date', 'text_body', 'optional_image']
+	list_display = ['headline', 'optional_posting_date', 'text_body', 'optional_image']
 
 admin.site.register(models.AchieverProfile, AchieverProfileAdmin)
 

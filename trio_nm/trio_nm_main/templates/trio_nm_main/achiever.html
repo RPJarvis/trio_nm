@@ -24,7 +24,7 @@
                             	{% if achiever.optional_image %}
 									<img class="float-left achiever-image" src="{{ achiever.optional_image.url }}">
 								{% endif %}
-                            	{{ achiever.text_body }} <br>
+                            	{{ achiever.text_body|safe }} <br>
                             </p>
                     </div>
                     <br>
