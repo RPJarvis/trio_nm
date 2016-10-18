@@ -65,7 +65,7 @@ class ScholarshipListing(models.Model):
 class AchieverProfile(models.Model):
     headline = models.CharField(max_length=140)
     optional_posting_date = models.DateTimeField(blank=True, null=True)
-    text_body = models.TextField(max_length=2648)
+    text_body = models.TextField(max_length=3048)
     optional_image = models.ImageField(verbose_name="Optional Image", blank=True)
 
     def __unicode__(self):

@@ -63,7 +63,7 @@ def scholarships(request):
 def achiever(request):
     context = RequestContext(request)
 
-    achievers = AchieverProfile.objects.all()
+    achievers = AchieverProfile.objects.all().order_by('-optional_posting_date')
 
     context_dict = {'achievers': achievers}
 
