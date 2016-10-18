@@ -17,6 +17,7 @@ urlpatterns = [
     url(r'^committee', views.committee, name='committee'),
     url(r'^bylaws', views.bylaws, name='bylaws'),
     url(r'^membership', views.membership, name='membership'),
+    url(r'^swasap', views.swasap, name='swasap'),
     url(r'^(?P<slug>[\w\-]+)/$', views.event_post, name='event_post'),
     url(r'^$', views.index, name='index'), #this should be last
 

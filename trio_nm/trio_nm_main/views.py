@@ -117,6 +117,15 @@ def membership(request):
 
     return render(request, 'membership.html', context_dict)
 
+
+def swasap(request):
+    context = RequestContext(request)
+
+    context_dict = {}
+
+    return render(request, 'swasap.html', context_dict)
+
+
 def event_post(request, slug):
     post = get_object_or_404(CalendarEvent, slug=slug)
     context_dict = {'post': post}
