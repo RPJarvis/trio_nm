@@ -186,7 +186,10 @@ b {
   /* this can also be static */ }
 
 #coe-link {
-  margin-left: 12px; }
+  margin-left: 10px; }
+
+#de-link {
+  margin-left: 10px; }
 
 .float-left {
   float: left; }
@@ -235,5 +238,8 @@ b {
   font: normal 700 24px/1 "Calibri", sans-serif;
   text-align: center;
   text-shadow: 1px 1px 0 #000; }
+
+#footer-content {
+  padding: 0; }
 
 /*# sourceMappingURL=styles.css.map */

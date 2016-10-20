@@ -71,8 +71,7 @@ body {
 
 #nav-sub {
   padding-right: 0;
-  padding-left: 0;
-}
+  padding-left: 0;}
 
 .dropdown-menu {
   background-color: $dark-yellow;
@@ -279,7 +278,11 @@ b {
 }
 
 #coe-link {
-  margin-left: 12px;
+  margin-left: 10px;
+}
+
+#de-link {
+  margin-left: 10px;
 }
 
 .bylaw-header {
@@ -351,3 +354,6 @@ text-align:    center;
 text-shadow:   1px 1px 0 #000;
 }
 
+#footer-content {
+  padding: 0;
+}
