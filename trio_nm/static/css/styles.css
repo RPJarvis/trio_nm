@@ -185,12 +185,6 @@ b {
   position: relative;
   /* this can also be static */ }
 
-#coe-link {
-  margin-left: 10px; }
-
-#de-link {
-  margin-left: 10px; }
-
 .float-left {
   float: left; }
 
@@ -222,6 +216,22 @@ b {
   .banner-img {
     height: 100px;
     width: auto; } }
+.footer-link {
+  margin-left: 10px; }
+
+@media (max-width: 551px) {
+  #fb-link {
+    display: none; }
+
+  #link-container {
+    padding: 0; }
+
+  .footer-link {
+    margin-left: 2px; }
+
+  #coe-link {
+    width: 170px;
+    height: 60px; } }
 #main_nav {
   margin-bottom: 0; }
 
